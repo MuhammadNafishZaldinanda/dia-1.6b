@@ -10,4 +10,4 @@ This repository provides **two different finetuning approaches** for Dia-1.6B. C
 
 This repository also includes a production-ready API implementation for serving the finetuned Dia-1.6B TTS model with voice cloning capabilities.
 
- [`deployment`](deployment/tts/)
+ [`deployment`](deployment/tts-api/)
