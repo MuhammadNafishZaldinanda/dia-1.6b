@@ -1,6 +1,6 @@
 # **Finetuning Dia-1.6B version (https://github.com/mesolitica/malaya-speech/tree/master/session/dia-tts) for Indonesian Text to Speech**
 
-This repository contains scripts and configurations to finetune a pretrained [Dia-1.6B](https://github.com/nari-labs/dia) model for Indonesian speech-to-text tasks.
+This repository contains scripts and configurations to finetune a pretrained [Dia-1.6B](https://github.com/nari-labs/dia) model for Indonesian text-to-speech tasks.
 
 ## **Dataset Requirements**
 You can use:
@@ -88,13 +88,7 @@ All datasets must:
 
 ## **Finetuning**
 
-## **Finetuning**
-
 Once the preprocessing and configuration steps are completed, you can start fine-tuning the model with the following command:
 ```bash
 bash finetune_dia_multipacking_v2.sh
 ```
-
-## Convert result model .pth to .safetensors
-
-Convert the fine-tuned model from .pth format to .safetensors format for stable and safer storage using the script `conversion.ipynb`.
