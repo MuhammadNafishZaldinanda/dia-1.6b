@@ -1,0 +1,13 @@
+*.wav
+*.pyc
+*.png
+*.pdf
+*.mp4
+
+resources
+output_audio
+*.zip
+.env
+__pycache__
+.DS_Store
+.ipynb_checkpoints
