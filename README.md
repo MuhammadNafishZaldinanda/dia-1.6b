@@ -1,13 +1,25 @@
-# **Finetuning Dia-1.6B Text to Speech**
+# Finetuning Dia-1.6B for Text-to-Speech
 
-This repository contains scripts and configurations to finetune a pretrained [Dia-1.6B](https://github.com/nari-labs/dia) model for Indonesian text-to-speech tasks.
+This repository provides scripts and configuration files for finetuning a pretrained Dia-1.6B model for Indonesian text-to-speech applications.
 
-This repository provides **two different finetuning approaches** for Dia-1.6B. Choose the one that best fits your use case.
+There are **two different finetuning approaches** available. You can choose the one that best suits your needs:
 
-[`finetuning/dia-finetuning-mesolitica`](finetuning/dia-finetuning-mesolitica/)
+1. [`finetuning/dia-finetuning-mesolitica`](finetuning/dia-finetuning-mesolitica/)
 
-[`finetuning/dia-finetuning-stlohrey`](finetuning/dia-finetuning-stlohrey/)
+    **Highlights:**
+    - Advanced data pipeline with permutation and multipacking
+    - Optimized GPU/VRAM utilization for large-scale training
+    - Speaker-style conditioning via reference–target pairing
+    - Suitable for large datasets and production-grade training
 
-This repository also includes a production-ready API implementation for serving the finetuned Dia-1.6B TTS model with voice cloning capabilities.
+2. [`finetuning/dia-finetuning-stlohrey`](finetuning/dia-finetuning-stlohrey/)
 
- [`deployment`](deployment/tts-api/)
+    **Highlights:**
+    - Simpler and more straightforward training workflow
+    - Easier dataset preparation and configuration
+    - Length-aware configuration using percentile statistics
+    - Suitable for quick experimentation and smaller-scale finetuning
+
+The repository also includes a production-ready API for deploying the finetuned Dia-1.6B TTS model, complete with voice cloning capabilities:
+
+- [`deployment`](deployment/tts-api/)

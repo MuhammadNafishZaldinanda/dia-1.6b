@@ -44,3 +44,10 @@ nohup python -m dia.finetune \
 ## Convert result model .pth to .safetensors
 
 Convert the fine-tuned model from .pth format to .safetensors format for stable and safer storage using the script `conversion.ipynb`.
+
+## ⚠️ **Disclaimer**  
+This finetuning setup is verified to work **only** with the following package version:
+```
+nari-tts @ git+https://github.com/nari-labs/dia.git@92206cfb33fbb599166c134d20d247b3c6bd5919
+```
+Using other versions may cause compatibility issues.
